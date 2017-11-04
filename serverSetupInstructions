@@ -1,0 +1,20 @@
+We are using a private cloud Server which is served using a docker container. 
+
+
+Cloud configuration
+
+docker run -d -p 8080:80 <nextcloud container name/id>
+
+
+Database Server Configuration
+
+docker run -e COUCHDB_USER=<admin username> -e COUCHDB_PASSWORD=<databaseAdministratorPassword> -p 5984:5984 <container_id/name>
+
+
+
+
+
+
+
+
+
