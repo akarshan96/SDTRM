@@ -1,0 +1,89 @@
+.
+├── consolidatedSheets.sh
+├── difference.txt
+├── first.py
+├── Haryana_State_Dealer_Tax_Monitor_Sheets
+│   ├── Ambala_Division_Office
+│   │   ├── Ambala_District
+│   │   │   └── Mumbai_2.xlsx
+│   │   ├── difference.txt
+│   │   ├── Kurukshetra_District
+│   │   │   └── Mumbai_4.xlsx
+│   │   ├── mail.py
+│   │   ├── mail.txt
+│   │   ├── md5checker.sh
+│   │   ├── old.txt
+│   │   ├── Panchkula_District
+│   │   │   └── Mumbai_2.xlsx
+│   │   ├── temp.sh
+│   │   ├── updated.txt
+│   │   └── Yamuna_Nagar_District
+│   │       └── Mumbai_4.xlsx
+│   ├── Faridabad_Divisional_Office
+│   │   ├── difference.txt
+│   │   ├── Faridabad_District
+│   │   │   └── Faridabad_District.xlsx
+│   │   ├── final.xlsx
+│   │   ├── mail.py
+│   │   ├── mail.txt
+│   │   ├── md5checker.sh
+│   │   ├── Nuh_District
+│   │   │   └── Nuh_District.xlsx
+│   │   ├── old.txt
+│   │   ├── Palwal_District
+│   │   │   └── Palwal_District.xlsx
+│   │   └── updated.txt
+│   ├── Gurugram_Divisional_Office
+│   │   ├── difference.txt
+│   │   ├── final.xlsx
+│   │   ├── Gurugram_District
+│   │   ├── Mahendragarh_District
+│   │   ├── mail.py
+│   │   ├── mail.txt
+│   │   ├── md5checker.sh
+│   │   ├── old.txt
+│   │   ├── Rewari_District
+│   │   └── updated.txt
+│   ├── Hisar_Divisional_Office
+│   │   ├── difference.txt
+│   │   ├── Fatehabad_District
+│   │   ├── final.xlsx
+│   │   ├── Hisar_District
+│   │   ├── Jind_District
+│   │   ├── mail.py
+│   │   ├── mail.txt
+│   │   ├── md5checker.sh
+│   │   ├── old.txt
+│   │   ├── Sirsa_District
+│   │   └── updated.txt
+│   ├── Karnal_Divisional_Office
+│   │   ├── Bhiwani_District
+│   │   ├── difference.txt
+│   │   ├── Kaithal_District
+│   │   ├── Karnal_District
+│   │   ├── mail.py
+│   │   ├── mail.txt
+│   │   ├── md5checker.sh
+│   │   ├── old.txt
+│   │   ├── Panipat_District
+│   │   └── updated.txt
+│   └── Rohtak_Divisional_Office
+│       ├── Bhiwani_District
+│       ├── Charkhi_Dadari_District
+│       ├── difference.txt
+│       ├── Jhajjar_District
+│       ├── mail.py
+│       ├── mail.txt
+│       ├── md5checker.sh
+│       ├── old.txt
+│       ├── Rohtak_District
+│       ├── Sonipat_District
+│       │   └── Detailed Explanation of the MS Excel Sheet.docx
+│       └── updated.txt
+├── New Shell Script.sh
+├── old.txt
+├── path.txt
+├── structure_haryana
+└── updated.txt
+
+30 directories, 56 files
