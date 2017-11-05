@@ -2,9 +2,21 @@ import pandas as pd
 import regex as re
 from collections import OrderedDict
 
+import sys
+import os
+
+if sys.argv[1]!='Haryana_State_Dealer_Tax_Monitor_Sheets':
+	cmd = 'find Nextcloud -maxdepth 4 -mindepth 3 -type f \\( -iname \"*.xlsx\" -o -iname \"*.xls\" \\) > path.txt'
+else:
+	cmd = 'find Nextcloud -maxdepth 3 -mindepth 2 -type f \\( -iname \"*.xlsx\" -o -iname \"*.xls\" \\) > path.txt'
+
+os.system(cmd)
+
 pd.set_option('display.max_rows', 500)
-file_list = ['/Users/akarshan/Desktop/LTU_4_MUMBAI.xlsx', '/Users/akarshan/Desktop/Mumbai_2.xlsx',
-             '/Users/akarshan/Desktop/Mumbai_4.xlsx']
+
+file_list = [x.strip() for x in open("path.txt").readlines()]
+
+#file_list = ['/Users/akarshan/Desktop/LTU_4_MUMBAI.xlsx', '/Users/akarshan/Desktop/Mumbai_2.xlsx','/Users/akarshan/Desktop/Mumbai_4.xlsx']
 
 final_list = []
 
@@ -67,7 +79,7 @@ def function(file_list):
             final_list.append(df_beta_new)
 
     result = pd.concat(final_list, ignore_index=True)
-    writer = pd.ExcelWriter('/Users/akarshan/Desktop/final.xlsx')
+    writer = pd.ExcelWriter('Nextcloud/'+sys.argv[1]+'/final.xlsx')
     df_gamma = pd.DataFrame(result)
     df_gamma.to_excel(writer, 'Feb. sheet 8')
     writer.save()
@@ -78,4 +90,4 @@ for i in range(len(file_list) - 1):
         function([file_list[i], file_list[i + 1]])
     else:
         final_list = []
-        function(['/Users/akarshan/Desktop/final.xlsx',file_list[i + 1]])
+        function(['Nextcloud/'+sys.argv[1]+'/final.xlsx',file_list[i + 1]])
