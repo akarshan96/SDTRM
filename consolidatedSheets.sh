@@ -1,0 +1,12 @@
+max=10000
+for i in `seq 2 $max`
+do
+	python2 first.py Haryana_State_Dealer_Tax_Monitor_Sheets/Faridabad_Divisional_Office
+	python2 first.py Haryana_State_Dealer_Tax_Monitor_Sheets/Ambala_Divisional_Office
+	python2 first.py Haryana_State_Dealer_Tax_Monitor_Sheets/Gurugram_Divisional_Office
+	python2 first.py Haryana_State_Dealer_Tax_Monitor_Sheets/Hisar_Divisional_Office
+	python2 first.py Haryana_State_Dealer_Tax_Monitor_Sheets/Karnal_Divisional_Office
+	python2 first.py Haryana_State_Dealer_Tax_Monitor_Sheets/Rohtak_Divisional_Office
+	python2 first.py Haryana_State_Dealer_Tax_Monitor_Sheets
+	sleep 10
+done
